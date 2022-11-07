@@ -1,0 +1,32 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+	background-color: #c6d9f1;
+}
+
+.salutation {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.saluteTextContainer {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15rem;
+}
+
+.saluteImageContainer {
+	flex: 2;
+	background: url('./img/Dream-House-PNG-HD-Quality.png') no-repeat center;
+	background-size: cover;
+
+	z-index: 100;
+}
