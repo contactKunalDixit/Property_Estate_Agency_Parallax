@@ -247,3 +247,28 @@
 	color: antiquewhite;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 1024px) {
+	.salute {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.saluteIconText {
+		font-size: 3vw !important;
+	}
+	.saluteTextContainer {
+		width: 100vw;
+		background: rgb(249, 234, 215);
+		background-image: radial-gradient(
+				circle,
+				rgba(249, 234, 215, 0.9) 26%,
+				rgba(167, 140, 109, 0.7) 87%
+			),
+			url('./img/house-isolated-field.jpeg');
+	}
+
+	.saluteImageContainer {
+		display: none;
+	}
+}
