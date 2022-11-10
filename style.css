@@ -30,7 +30,7 @@
 	cursor: default;
 	text-align: center;
 	background: rgb(249, 234, 215);
-	background: radial-gradient(
+	background-image: radial-gradient(
 		circle,
 		rgba(249, 234, 215, 1) 26%,
 		rgba(167, 140, 109, 1) 87%
@@ -38,6 +38,7 @@
 }
 
 .saluteIconText {
+	font-size: 1.8vw !important;
 }
 
 .GreetMsg {
@@ -93,18 +94,25 @@
 }
 
 .jobTitleContainer {
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	padding: 0 2rem;
-	/* background-color: transparent; */
-	background: rgb(63, 43, 85) url('./img/bg2.png');
 	overflow: hidden;
+	background: rgb(249, 234, 215);
+
+	background-image: radial-gradient(
+			circle,
+			rgba(249, 234, 215, 0.7) 26%,
+			rgba(166, 140, 109, 0.8) 87%
+		),
+		url('./img/bg2.png');
 }
 
 .jobTitle {
 	font-size: 6vw;
-	color: #e1ceb7;
+	color: #000000;
 	text-align: center;
 }
 
@@ -117,10 +125,11 @@
 	width: 100vw;
 	background: rgb(249, 234, 215);
 	background: radial-gradient(
-		circle,
-		rgba(249, 234, 215, 1) 26%,
-		rgba(167, 140, 109, 1) 87%
-	);
+			circle,
+			rgba(249, 234, 215, 0.7) 26%,
+			rgba(167, 140, 109, 0.8) 87%
+		),
+		url('./img/bg1.png');
 }
 
 .projectsTitle {
