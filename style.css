@@ -6,27 +6,235 @@
 }
 
 .container {
-	background-color: #c6d9f1;
+	background-color: antiquewhite;
 }
 
-.salutation {
+.salute {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	align-items: center;
+	overflow: hidden;
+	/* padding: 0 1rem; */
 }
 
 .saluteTextContainer {
-	flex: 2;
+	/* width: 100%; */
+	width: 50vw;
+	height: 100vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
-	font-size: 15rem;
+	font-size: 4.5vw;
+	cursor: default;
+	text-align: center;
+	background: rgb(249, 234, 215);
+	background: radial-gradient(
+		circle,
+		rgba(249, 234, 215, 1) 26%,
+		rgba(167, 140, 109, 1) 87%
+	);
+}
+
+.saluteIconText {
+}
+
+.GreetMsg {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 80%;
+}
+.GreetMsg :last-child {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.stars {
+	width: 10%;
+}
+
+.sikhImageIcon {
+	width: 50%;
+	z-index: 100;
+	margin: 0 auto;
+}
+
+.saluteText {
+	font-size: 6vw !important;
 }
 
 .saluteImageContainer {
-	flex: 2;
-	background: url('./img/Dream-House-PNG-HD-Quality.png') no-repeat center;
-	background-size: cover;
+	width: 100%;
+	height: 100%;
+	width: 50vw;
+}
 
-	z-index: 100;
+.saluteImage {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.nameContainer {
+	height: 100vh;
+	background-color: rgb(145, 110, 180);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.name {
+	font-size: 10vw;
+	/* color: #333; */
+	cursor: default;
+	text-align: center;
+}
+
+.jobTitleContainer {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+	/* background-color: transparent; */
+	background: rgb(63, 43, 85) url('./img/bg2.png');
+	overflow: hidden;
+}
+
+.jobTitle {
+	font-size: 6vw;
+	color: #e1ceb7;
+	text-align: center;
+}
+
+.projects {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10vh;
+	/* padding: 0 100px; */
+	width: 100vw;
+	background: rgb(249, 234, 215);
+	background: radial-gradient(
+		circle,
+		rgba(249, 234, 215, 1) 26%,
+		rgba(167, 140, 109, 1) 87%
+	);
+}
+
+.projectsTitle {
+	font-size: 6vw;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.75);
+	background: transparent;
+	text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.05);
+}
+
+.project {
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* gap: 70px; */
+	/* height: 70vh; */
+	overflow: hidden;
+	width: 100%;
+}
+.project1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	background-size: cover;
+	/* flex: 1; */
+}
+.proj1Img {
+	/* background-size: auto; */
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+}
+.project1Detail {
+	/* flex: 1; */
+	width: 50vw;
+	background-color: transparent;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.projectTitle {
+	margin: 1rem auto;
+	font-size: 3vw;
+}
+
+.projectDesc {
+	padding: 1rem;
+	font-size: 1.5vw;
+}
+
+.projectButton {
+	font-size: 1.4vw;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	margin: 2rem;
+	cursor: pointer;
+	border: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.projectButton::after {
+	content: 'View Project';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	transition: 1s all;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3f2b54;
+	color: antiquewhite;
+}
+
+.projectButton:hover.projectButton::after {
+	transform: translateX(100%);
+}
+
+.contact {
+	background: rgb(249, 234, 215);
+	background: radial-gradient(
+		circle,
+		rgba(249, 234, 215, 1) 26%,
+		rgba(167, 140, 109, 1) 87%
+	);
+	width: 100vw;
+	height: 20vh;
+}
+
+.contactDetails {
+	font-size: 1vw;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.credits {
+	width: 100vw;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: black;
+}
+.credits > a {
+	color: antiquewhite;
+	text-decoration: none;
 }
