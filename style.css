@@ -237,6 +237,7 @@
 }
 
 .credits {
+	font-size: 1vw;
 	width: 100vw;
 	display: flex;
 	justify-content: space-evenly;
@@ -258,6 +259,7 @@
 		font-size: 3vw !important;
 	}
 	.saluteTextContainer {
+		padding: 1rem;
 		width: 100vw;
 		background: rgb(249, 234, 215);
 		background-image: radial-gradient(
@@ -270,5 +272,63 @@
 
 	.saluteImageContainer {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.project1 {
+		box-sizing: border-box;
+		/* background-color: red; */
+		width: 100%;
+	}
+	.proj1Img {
+		width: 95%;
+		height: 90%;
+	}
+	.project1Detail {
+		padding: 1rem;
+	}
+	.projectDesc {
+		padding: 0%;
+		font-size: 1rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.project {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		font-size: 2rem;
+		/* width: 100vh; */
+	}
+	.projectTitle {
+		font-size: 1.5rem;
+	}
+	.project1Detail {
+		width: 100%;
+	}
+
+	.projectButton {
+		font-size: 1rem;
+	}
+
+	.project2 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.contactDetails {
+		font-size: 0.7rem;
+		text-align: center;
+		display: flex;
+	}
+
+	.credits {
+		font-size: 0.7rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
 	}
 }
