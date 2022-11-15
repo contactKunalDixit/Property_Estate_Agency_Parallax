@@ -3,7 +3,7 @@ const saluteTextContainer = document.querySelector('.saluteTextContainer');
 const saluteImageContainer = document.querySelector('.saluteImageContainer');
 const sikhImageIcon = document.querySelector('.sikhImageIcon');
 const saluteText = document.querySelector('.saluteText');
-const jobTitleContainer = document.querySelectorAll('.jobTitleContainer');
+const jobTitleContainer = document.querySelector('.jobTitleContainer');
 const jobTitle = document.querySelector('.jobTitle');
 const projects = document.querySelector('.projects');
 const project1 = document.querySelectorAll('.project1');
@@ -43,7 +43,7 @@ window.addEventListener('scroll', () => {
 	}px)`;
 	saluteText.style.transform = `translateY(${offsetY * 0.4}px)`;
 	//! Profile Description Page Parallax effect
-	jobTitleContainer[0].style.backgroundPositionY = `${offsetY * 0.3}px`;
+	jobTitleContainer.style.backgroundPositionY = `${offsetY * 0.3}px`;
 	// jobTitleContainer[1].style.backgroundPositionY = `-${offsetY * 0.3}px`;
 	jobTitle.style.transform = `translateX(calc(110vh - ${offsetY}px)`;
 

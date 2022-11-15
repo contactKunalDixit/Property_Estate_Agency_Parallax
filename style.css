@@ -450,7 +450,7 @@ html {
 		transform: none !important;
 	}
 	.saluteText {
-		transform: nonw !important;
+		transform: none !important;
 	}
 }
 
@@ -499,6 +499,18 @@ html {
 		display: flex;
 		flex-direction: column;
 	}
+	.saluteTextContainer {
+		transform: none !important;
+	}
+	.jobTitle {
+		transform: none !important;
+	}
+	.sikhImageIcon {
+		transform: none !important;
+	}
+	.saluteText {
+		transform: none !important;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -507,5 +519,20 @@ html {
 	}
 	.sikhImageIcon {
 		width: 80%;
+	}
+	.saluteTextContainer {
+		transform: none !important;
+	}
+	.jobTitle {
+		transform: none !important;
+	}
+	.sikhImageIcon {
+		transform: none !important;
+	}
+	.saluteText {
+		transform: none !important;
+	}
+	.saluteImageContainer {
+		transform: none !important;
 	}
 }
