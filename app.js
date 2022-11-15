@@ -52,21 +52,24 @@ window.addEventListener('scroll', () => {
 	// project1s[0].style.transform = `translate(calc(210vh - ${offsetY}px)`;
 });
 
+//! DISABLING MODAL FEATURE
+/*
 project1Details.addEventListener('click', () => {
 	modal.style.display = 'flex';
 	// When the modal is shown, we want a fixed body
 	document.body.style.top = `-${window.scrollY}px`;
-	console.log(`${window.scrollY}px`);
+	// console.log(`${window.scrollY}px`);
 	document.body.style.position = 'fixed';
 });
 
 window.addEventListener('click', (event) => {
 	if (event.target == proj1ModalOuterContainer) {
 		modal.style.display = 'none';
-		const scrollY = document.body.style.top;
+		const scrollY = `-200vh`;
 		document.body.style.position = '';
 		document.body.style.top = '';
-		window.scrollTo(0, parseInt(scrollY || '0') * -1);
+		// window.scrollTo(0, parseInt(scrollY || '0') * -1);
+		window.scrollTo(0, 1800);
 	}
 });
 
@@ -105,3 +108,4 @@ closeButton2.addEventListener('click', () => {
 	document.body.style.top = '';
 	window.scrollTo(0, parseInt(scrollY || '0') * -1);
 });
+*/
